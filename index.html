@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vice City</title>
+
+<title>Vice City Network</title>
 
 <style>
 
@@ -15,25 +19,25 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#0a0a0a;
+background:#0b0b0b;
 color:white;
 }
 
 /* NAVBAR */
 
 nav{
-background:#0f0f0f;
-border-bottom:2px solid #b026ff;
-padding:15px 40px;
+background:#111;
+border-bottom:2px solid #ff2bd6;
+padding:16px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
 .logo{
-font-size:24px;
+font-size:26px;
 font-weight:bold;
-color:#ff4df2;
+color:#ff2bd6;
 }
 
 nav ul{
@@ -50,13 +54,13 @@ transition:0.2s;
 }
 
 nav ul li a:hover{
-color:#ff4df2;
+color:#ff2bd6;
 }
 
 /* BANNER */
 
 .banner{
-height:420px;
+height:450px;
 background-image:url("images/background_image.png");
 background-size:cover;
 background-position:center;
@@ -64,22 +68,22 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-border-bottom:3px solid #b026ff;
+border-bottom:3px solid #ff2bd6;
 }
 
 .banner h1{
-font-size:70px;
-color:#ff4df2;
-text-shadow:0 0 20px rgba(255,0,200,0.6);
+font-size:72px;
+color:#ff2bd6;
+text-shadow:0 0 25px rgba(255,0,200,0.7);
 }
 
 .banner p{
-font-size:18px;
-margin-top:10px;
+font-size:20px;
+margin-top:12px;
 color:#eee;
 }
 
-/* MAIN CONTENT */
+/* MAIN CONTAINER */
 
 .container{
 max-width:1200px;
@@ -87,49 +91,52 @@ margin:auto;
 padding:60px 30px;
 }
 
+/* SECTIONS */
+
 .section{
-margin-bottom:70px;
+margin-bottom:80px;
 }
 
 .section h2{
-color:#ff4df2;
+font-size:30px;
 margin-bottom:15px;
-font-size:28px;
+color:#ff2bd6;
 }
 
 .section p{
 color:#ccc;
 line-height:1.7;
+max-width:800px;
 }
 
-/* INFO CARDS */
+/* PLATFORM GRID */
 
-.card-grid{
+.platform-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 margin-top:30px;
 }
 
-.card{
-background:#1a1a1a;
-padding:25px;
-border-radius:8px;
+.platform{
+background:#181818;
+padding:30px;
+border-radius:10px;
 border:1px solid #333;
-transition:0.2s;
+transition:0.25s;
 }
 
-.card:hover{
-border:1px solid #ff4df2;
-transform:translateY(-4px);
+.platform:hover{
+border:1px solid #ff2bd6;
+transform:translateY(-6px);
 }
 
-.card h3{
-color:#ff4df2;
+.platform h3{
+color:#ff2bd6;
 margin-bottom:10px;
 }
 
-.card p{
+.platform p{
 color:#bbb;
 font-size:14px;
 }
@@ -137,99 +144,122 @@ font-size:14px;
 /* FOOTER */
 
 footer{
-background:#0f0f0f;
-padding:30px;
+background:#111;
+padding:35px;
 text-align:center;
-border-top:2px solid #b026ff;
+border-top:2px solid #ff2bd6;
 color:#777;
 font-size:14px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
-<div class="logo">Vice City</div>
+
+<div class="logo">Vice City Network</div>
 
 <ul>
 <li><a href="#">Home</a></li>
+<li><a href="#">Platforms</a></li>
 <li><a href="#">About</a></li>
-<li><a href="#">Lore</a></li>
-<li><a href="#">Server</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#">Community</a></li>
+<li><a href="#">Join</a></li>
 </ul>
+
 </nav>
 
-
 <div class="banner">
+
 <div>
 <h1>Vice City</h1>
-<p>The neon capital of crime and opportunity</p>
-</div>
+<p>A Multi-Platform Roleplay Community</p>
 </div>
 
+</div>
 
 <div class="container">
 
 <div class="section">
-<h2>Welcome to Vice City</h2>
-<p>
-Vice City is a neon drenched metropolis filled with crime, opportunity,
-and endless nightlife. This website serves as an information hub for the
-world, lore, and systems surrounding Vice City.
-</p>
-</div>
 
+<h2>What is Vice City?</h2>
+
+<p>
+Vice City is a multi-platform roleplay network inspired by the neon streets,
+crime culture, and nightlife of a fictional coastal metropolis.
+Our community spans multiple platforms so players can experience
+Vice City in different ways depending on how they play.
+</p>
+
+</div>
 
 <div class="section">
-<h2>Explore the City</h2>
 
-<div class="card-grid">
+<h2>Platforms</h2>
 
-<div class="card">
-<h3>Districts</h3>
+<div class="platform-grid">
+
+<div class="platform">
+
+<h3>FiveM</h3>
+
 <p>
-Discover the different areas of Vice City from beachfront luxury
-to the darker streets of the inner city.
+Our FiveM server provides the most advanced Vice City experience
+with custom scripts, immersive roleplay systems, player-owned
+businesses, and a fully living city.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Crime & Power</h3>
+<div class="platform">
+
+<h3>Xbox</h3>
+
 <p>
-Crime organizations, gangs, and power structures dominate
-the underground of Vice City.
+Vice City Xbox roleplay focuses on immersive console RP with
+organized departments, community events, and player driven stories.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Economy</h3>
+<div class="platform">
+
+<h3>PlayStation 5</h3>
+
 <p>
-Money flows through legal businesses and underground
-operations alike in this thriving city.
+The PS5 Vice City community delivers structured console roleplay
+with factions, police departments, and organized community events.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Nightlife</h3>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>The Vice City Network</h2>
+
 <p>
-From neon clubs to underground parties, the city
-never sleeps.
+Vice City is more than a server — it's a connected community
+spanning multiple platforms. Whether you play on PC or console,
+you can take part in the Vice City world and help shape the
+stories that unfold within it.
 </p>
-</div>
-
-</div>
-</div>
 
 </div>
 
+</div>
 
 <footer>
-© 2026 ViceCity.website
-</footer>
 
+© 2026 ViceCity.website — Vice City Network
+
+</footer>
 
 </body>
 </html>
