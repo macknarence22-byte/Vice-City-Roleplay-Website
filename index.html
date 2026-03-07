@@ -9,6 +9,10 @@
 
 <title>Vice City Network</title>
 
+<!-- Favicon GIF in images folder -->
+
+<link rel="icon" href="images/favicon.gif" type="image/gif">
+
 <style>
 
 *{
@@ -23,12 +27,12 @@ color:white;
 background:
 linear-gradient(
 135deg,
-rgba(255,0,170,0.87) 0%,
-rgba(200,0,255,0.83) 15%,
-rgba(170,0,255,0.75) 30%,
-rgba(80,40,120,0.65) 45%,
-rgba(0,120,255,0.22) 55%,
-rgba(20,20,20,0.85) 70%,
+rgba(255,0,170,0.52) 0%,   /* Pink toned to ~60% */
+rgba(200,0,255,0.50) 15%,
+rgba(170,0,255,0.45) 30%,
+rgba(80,40,120,0.35) 45%,
+rgba(0,120,255,0.12) 55%,
+rgba(20,20,20,0.55) 70%,
 #0b0b0b 90%
 );
 background-color:#0b0b0b;
@@ -72,7 +76,7 @@ color:#ff2bd6;
 
 .banner{
 height:450px;
-background-image:url("images/background_image.png");
+background-image:url("images/background.png");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -82,17 +86,7 @@ text-align:center;
 border-bottom:3px solid #ff2bd6;
 }
 
-.banner h1{
-font-size:72px;
-color:#ff2bd6;
-text-shadow:0 0 25px rgba(255,0,200,0.7);
-}
-
-.banner p{
-font-size:20px;
-margin-top:12px;
-color:#eee;
-}
+/* Banner text removed */
 
 /* MAIN CONTAINER */
 
@@ -135,7 +129,7 @@ color:inherit;
 display:block;
 }
 
-/* DARKER PLATFORM CARDS */
+/* PLATFORM CARDS - DARKER MINI GRADIENT & UNIFORM HEIGHT */
 
 .platform{
 background:
@@ -153,6 +147,10 @@ border:1px solid #333;
 transition:0.25s;
 cursor:pointer;
 backdrop-filter:blur(3px);
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+height:260px; /* uniform height */
 }
 
 .platform:hover{
@@ -169,6 +167,7 @@ margin-bottom:10px;
 .platform p{
 color:#bbb;
 font-size:14px;
+flex-grow:1;
 }
 
 /* FOOTER */
@@ -201,6 +200,11 @@ font-size:14px;
 </ul>
 
 </nav>
+
+<div class="banner">
+<!-- Banner text removed -->
+</div>
+
 <div class="container">
 
 <div class="section">
@@ -228,9 +232,9 @@ Vice City in different ways depending on how they play.
 <h3>FiveM</h3>
 
 <p>
-Our FiveM server provides a full Vice City experience
-with custom scripts, immersive roleplay, and player-owned
-businesses.
+Our FiveM server provides the most advanced Vice City experience
+with custom scripts, immersive roleplay systems, player-owned
+businesses, and a fully living city.
 </p>
 
 </div>
@@ -257,17 +261,23 @@ organized departments, community events, and player driven stories.
 <p>
 The PS5 Vice City community delivers structured console roleplay
 with factions, police departments, and organized community events.
-  
 </p>
+
 </div>
 </a>
+
 </div>
+
 </div>
+
 <div class="section">
+
 <h2>The Vice City Network</h2>
+
 <p>
-Vice City is more than a just another Server, it's a Global Community. 
-Whether you play on PC or console, you can take part in the Vice City Roleplay and help shape the
+Vice City is more than a server — it's a connected community
+spanning multiple platforms. Whether you play on PC or console,
+you can take part in the Vice City world and help shape the
 stories that unfold within it.
 </p>
 
@@ -277,7 +287,7 @@ stories that unfold within it.
 
 <footer>
 
-© 2026 ViceCity.website | Vice City Roleplay
+© 2026 ViceCity.website — Vice City Network
 
 </footer>
 
